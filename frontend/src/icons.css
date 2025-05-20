@@ -1,0 +1,60 @@
+.oil{
+    overflow-y: auto;
+    height: 60px;
+    width: 100px;
+    position: absolute;
+    top: 70%;
+    right:33%;
+}
+.engine{
+    overflow-y: auto;
+    height: 60px;
+    width: 100px;
+    position: absolute;
+    top: 70%;
+    right:27%;
+}
+.fuel{
+    overflow-y: auto;
+    height: 60px;
+    width: 100px;
+    position: absolute;
+    top: 70%;
+    right:20%;
+}
+.oiltemp{
+    color: black;
+    overflow-y: auto;
+    position: absolute;
+    right:35%;
+    top: 65%;
+}
+.enginetemp{
+    color: black;
+    overflow-y: auto;
+    position: absolute;
+    right:27%;
+    top: 78%;
+}
+.fuelpress{
+    color: black;
+    overflow-y: auto;
+    position: absolute;
+    right:21%;
+    top: 65%;
+}
+.oilpress{
+    height: 60px;
+    width: 100px;
+    overflow-y: auto;
+    position: absolute;
+    right:15%;
+    top: 70%;
+}
+.oilpressure{
+    color: black;
+    overflow-y: auto;
+    position: absolute;
+    right:15%;
+    top: 78%;
+}

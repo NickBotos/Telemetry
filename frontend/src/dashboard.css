@@ -1,0 +1,26 @@
+.right-section{
+    width: 40%;
+    height: 90%;
+    text-align: right;
+    flex-direction: column;
+    margin-inline-start: 60%;
+}
+.left-section{
+    margin-top: 10px;
+    width: 40%;
+    height: 90%;
+    text-align: left;
+    flex-direction: column;
+    margin-inline-start: 0%;
+}
+
+.middle-section {
+    width: 20%;
+    height: 90%;
+    text-align: center;
+    flex-direction: column;
+    display: inline-block;
+    margin-inline-start: 40%;
+    position: absolute; 
+    top: 10%;
+}

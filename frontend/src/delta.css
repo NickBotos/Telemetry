@@ -1,0 +1,12 @@
+.liveDelta{
+    color:black;
+    position: absolute;
+    font-size: large;
+    top: 80%;
+    left: 35%;
+    text-align: center;
+    display: inline-block;
+}
+.liveDeltaValue{
+    font-size:medium;
+};

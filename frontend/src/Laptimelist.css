@@ -1,0 +1,23 @@
+.toppart{
+    display: inline-block;
+    width:  200px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #f5e042;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 5px;
+    background-color:rgb(53, 72, 100);
+    box-sizing: border-box;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+.listedpart {
+    font-size: medium;
+    list-style: none;
+    color: black;
+    text-align: center  ;
+    margin: 0;
+    overflow-y: auto;
+}

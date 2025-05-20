@@ -1,0 +1,278 @@
+.Car{
+    position:absolute;
+    top: 10%;
+    width: 200px;
+    height: 400px;
+    margin-inline-start: 5%;
+    margin-top: 0%;
+    justify-content: top;
+    align-items: top;
+    display: flex;
+}
+.rr{
+    position:absolute;
+    right: 15%;
+    top: 13%;
+    width:60px;
+    height: 500px;
+    justify-content: top;
+    align-items: top;
+}
+.rl{
+    position:absolute;
+    top: 13%;
+    right: 27%;
+    width:40px;
+    height: 500px;
+    justify-content: top;
+    align-items: top;
+}
+.fr{
+    top:42%;
+    position:absolute;
+    right: 26%;
+    width: 60px;
+    height: 500px;
+    justify-content: top;
+    align-items: top;
+}
+.fl{
+    top:42%;
+    position:absolute;
+    right: 16%;
+    width: 40px;
+    height: 500px;
+    justify-content: top;
+    align-items: top;
+}
+.flinner{
+    top: -5%;
+    color: black;
+    position:absolute;
+    left: -240%;
+    font-size: larger;
+    justify-content: top;
+    align-items: top;
+}
+.flcenter{
+    top:13%;
+    color: black;
+    position:absolute;
+    left: -150%;
+    font-size: larger;
+    justify-content: top;
+    align-items: top;
+}
+.flouter{
+    top: -5%;
+    color: black;
+    position:absolute;
+    font-size: larger;
+    left: -55%;
+    justify-content: top;
+    align-items: top;
+}
+.frouter{
+    font-style: bold;
+    top: -5%;
+    color: black;
+    position:absolute;
+    right: 250%;
+    font-size: larger;
+    justify-content: top;
+    align-items: top;
+}
+.frinner{
+    font-style: bold;
+    top: -5%;
+    color: black;
+    position:absolute;
+    right: 130%;
+    font-size: larger;
+    justify-content: top;
+    align-items: top;
+}
+.frcenter{
+    font-style: bold;
+    top:13%;
+    color: black;
+    position:absolute;
+    right: 190%;
+    font-size: larger;
+    justify-content: top;
+    align-items: top;
+}
+
+.rrinner{
+    font-style: bold;
+    top: -5%;
+    color: black;
+    position:absolute;
+    right: 410%;
+    font-size: larger;
+    justify-content: top;
+    align-items: top;
+}
+.rrouter{
+    top: -5%;
+    color: black;
+    position:absolute;
+    font-size: larger;
+    right: 550%;
+    justify-content: top;
+    align-items: top;
+}
+.rrcenter{
+    font-style: bold;
+    top:13%;
+    color: black;
+    position:absolute;
+    font-size: larger;
+    right: 460%;
+    justify-content: top;
+    align-items: top;
+}
+
+.rlo{ 
+    position:absolute;
+    left: 300%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.rlc{
+    position:absolute;
+    left: 230%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.rli{
+    position:absolute;
+    left: 155%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}   
+.rri{
+    position:absolute;
+    left:-380%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.rrc{
+    left:-430%;
+    position:absolute;
+    right: 150%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.rro{
+    left:-480%;
+    position:absolute;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.fri{
+    position:absolute;
+    left: -100%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.fro{
+    position:absolute;
+    left: -190%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.frc{
+    position:absolute;
+    left: -150%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.fli{
+    position:absolute;
+    right: 250%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.flo{
+    position:absolute;
+    right: 100%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.flc{
+    position:absolute;
+    right: 175%;
+    top: 0%;
+    width:30px;
+    height: 70px;
+    justify-content: top;
+    align-items: top;
+}
+.rlinner{
+    top:-5%;
+    right: -110%;
+    color:black;
+    font-size: larger;
+    font-style: bold;
+    position:absolute;
+    justify-content: top;
+}
+.rlouter{
+    right: -310%;
+    top:-5%;
+    font-size: larger;
+    font-style: bold;
+    position: absolute;
+}
+.rlcenter{
+    right: -240%;
+    top:13%;
+    font-size: larger;
+    font-style: bold;
+    position: absolute;
+}
+.chassistemp{
+    position: absolute;
+    text-align: center;
+    font-size: large;
+    color: white;
+    border: 1px solid black;
+    width: 180px;
+    background-color: black;
+    top:30%;
+    right: 23%;
+}
