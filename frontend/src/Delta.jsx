@@ -9,7 +9,7 @@ const Other = () => {
 
   useEffect(() => {
     const connectWebSocket = () => {
-      const socket = new WebSocket("ws://192.168.0.111:3001");
+      const socket = new WebSocket("ws://192.168.0.199:3001");
 
       socket.onmessage = (event) => {
         console.log("Raw WebSocket Data:", event.data);

@@ -11,6 +11,7 @@ import WheelTemperature from "./Wheel-temp-diagram";
 import Warning from "./icons-notifications";
 import Other from "./other";
 import Delta from "./Delta";
+import './index.css';
 
 
 function App() {

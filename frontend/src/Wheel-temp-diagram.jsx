@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./amaji.css";
+import amajiImg from "./amaji.png";
 
 
 const WheelTemperature = () => {
@@ -33,7 +34,7 @@ const WheelTemperature = () => {
 
   useEffect(() => {
     const connectWebSocket = () => {
-      const socket = new WebSocket("ws://192.168.0.111:3001");
+      const socket = new WebSocket("ws://192.168.0.199:3001");
 
       socket.onmessage = (event) => {
         try {
@@ -70,7 +71,7 @@ const WheelTemperature = () => {
 
   return (
     <div>
-      <img src={require("./amaji.png")} className="Car" alt="Car" />
+      <img src={amajiImg} className="Car" alt="Car" />
 
       {/* Front Left Wheel */}
       <div className="fl">

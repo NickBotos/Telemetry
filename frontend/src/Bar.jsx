@@ -12,7 +12,7 @@ const Bar = () => {
 
   useEffect(() => {
     const connectWebSocket = () => {
-      const socket = new WebSocket("ws://192.168.0.111:3001");
+      const socket = new WebSocket("ws://192.168.0.199:3001");
       socket.onmessage = (event) => {
         try {
           const newData = JSON.parse(event.data);
