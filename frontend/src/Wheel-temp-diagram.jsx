@@ -34,7 +34,7 @@ const WheelTemperature = () => {
 
   useEffect(() => {
     const connectWebSocket = () => {
-      const socket = new WebSocket("ws://192.168.0.199:3001");
+      const socket = new WebSocket("wss://ws.art-telemetry.xyz");
 
       socket.onmessage = (event) => {
         try {

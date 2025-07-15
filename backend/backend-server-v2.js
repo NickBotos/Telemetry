@@ -10,7 +10,7 @@ app.use(cors());
 
 // Set up SerialPort and parser
 const serialPort = new SerialPort({
-  path: "COM5",
+  path: "COM4",
   baudRate: 115200,
 });
 
@@ -76,39 +76,73 @@ const broadcast = (data) => {
 parser.on("data", (data) => {
   try {
     const values = data.trim().split(" ");
-    if (values.length === 31) {
+    if (values.length === 13) {
       sensorData = {
-        laptime: parseInt(values[0]),
-        chassisTemp: parseInt(values[1]),
-        frontBrakePress: parseInt(values[2]),
-        rearBrakePress: parseInt(values[3]),
-        outerFRIR: parseInt(values[4]),
-        innerFRIR: parseInt(values[5]),
-        centerFRIR: parseInt(values[6]),
-        outerFLIR: parseInt(values[7]),
-        innerFLIR: parseInt(values[8]),
-        centerFLIR: parseInt(values[9]),
-        outerRLIR: parseInt(values[10]),
-        innerRLIR: parseInt(values[11]),
-        centerRLIR: parseInt(values[12]),
-        outerRRIR: parseInt(values[13]),
-        innerRRIR: parseInt(values[14]),
-        centerRRIR: parseInt(values[15]),
-        speed: parseInt(values[16]),
-        gear: parseInt(values[17]),
-        rpm: parseInt(values[18]),
-        map: parseInt(values[19]),
-        lambda: parseFloat(values[20]),
-        fuelUsed: parseInt(values[21]),
-        fuelPress: parseInt(values[22]),
-        ignitionTiming: parseInt(values[23]),
-        oilPress: parseInt(values[24]),
-        oilTemp: parseInt(values[25]),
-        iat: parseInt(values[26]),
-        tps: parseInt(values[27]),
-        batV: parseInt(values[28]),
-        coolantTemp: parseInt(values[29]),
-        liveDelta: parseInt(values[30]),
+        //laptime: parseInt(values[0]),
+        chassisTemp: parseInt(values[0]),
+        // frontBrakePress: parseInt(values[2]),
+        // rearBrakePress: parseInt(values[3]),
+        // outerFRIR: parseInt(values[1]),
+        // innerFRIR: parseInt(values[2]),
+        // centerFRIR: parseInt(values[3]),
+        // outerFLIR: parseInt(values[4]),
+        // innerFLIR: parseInt(values[5]),
+        // centerFLIR: parseInt(values[6]),
+        // outerRLIR: parseInt(values[7]),
+        // innerRLIR: parseInt(values[8]),
+        // centerRLIR: parseInt(values[9]),
+        // outerRRIR: parseInt(values[10]),
+        // innerRRIR: parseInt(values[11]),
+        // centerRRIR: parseInt(values[12]),
+        //speed: parseInt(values[0]),
+        gear: parseInt(values[1]),
+        rpm: parseInt(values[2]),
+        map: parseFloat(values[3]),
+        lambda: parseFloat(values[4]),
+        fuelUsed: parseInt(values[5]),
+        fuelPress: parseInt(values[6]),
+        //ignitionTiming: parseInt(values[8]),
+        oilPress: parseFloat(values[7]),
+        oilTemp: parseInt(values[8]),
+        iat: parseFloat(values[9]),
+        tps: parseInt(values[10]),
+        batV: parseFloat(values[11]),
+        coolantTemp: parseInt(values[12]),
+        //liveDelta: parseInt(values[30]),
+
+        //testing onlymd
+        
+        // laptime: parseInt(values[0]),
+        // chassisTemp: parseInt(values[1]),
+        // frontBrakePress: parseInt(values[2]),
+        // rearBrakePress: parseInt(values[3]),
+        // outerFRIR: parseInt(values[4]),
+        // innerFRIR: parseInt(values[5]),
+        // centerFRIR: parseInt(values[6]),
+        // outerFLIR: parseInt(values[7]),
+        // innerFLIR: parseInt(values[8]),
+        // centerFLIR: parseInt(values[9]),
+        // outerRLIR: parseInt(values[10]),
+        // innerRLIR: parseInt(values[11]),
+        // centerRLIR: parseInt(values[12]),
+        // outerRRIR: parseInt(values[13]),
+        // innerRRIR: parseInt(values[14]),
+        // centerRRIR: parseInt(values[15]),
+        // speed: parseInt(values[16]),
+        // gear: parseInt(values[17]),
+        // rpm: parseInt(values[18]),
+        // map: parseInt(values[19]),
+        // lambda: parseInt(values[20]),
+        // fuelUsed: parseInt(values[21]),
+        // fuelPress: parseInt(values[22]),
+        // ignitionTiming: parseInt(values[23]),
+        // oilPress: parseInt(values[24]),
+        // oilTemp: parseInt(values[25]),
+        // iat: parseInt(values[26]),
+        // tps: parseInt(values[27]),
+        // batV: parseInt(values[28]),
+        // coolantTemp: parseInt(values[29]),
+        // liveDelta: parseInt(values[30]),
       };
       console.log("Parsed Data:", sensorData);
       broadcast(sensorData);
@@ -123,7 +157,7 @@ app.get("/api", (req, res) => {
   res.json(sensorData);
 });
 
-app.listen(port, () => {
+app.listen(port,'0.0.0.0', () => {
   console.log(`Server running on http://192.168.0.199:${port}`);
 });
 

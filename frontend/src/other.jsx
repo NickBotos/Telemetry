@@ -10,7 +10,7 @@ const Other = () => {
 
   useEffect(() => {
     const connectWebSocket = () => {
-      const socket = new WebSocket("ws://192.168.0.111:3001");
+      const socket = new WebSocket("wss://ws.art-telemetry.xyz");
 
       socket.onmessage = (event) => {
         console.log("Raw WebSocket Data:", event.data);

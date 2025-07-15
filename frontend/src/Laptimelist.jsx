@@ -4,7 +4,7 @@ import "./Laptimelist.css";
 const Laptimelist = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    const socket = new WebSocket("ws://192.168.0.199:3001");
+    const socket = new WebSocket("wss://ws.art-telemetry.xyz");
 
     socket.onmessage = (event) => {
       console.log("Raw event data:", event.data); // Log raw data

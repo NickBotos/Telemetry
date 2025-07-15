@@ -9,7 +9,7 @@ const BatteryLambdaChart = () => {
 
   useEffect(() => {
     const connectWebSocket = () => {
-      const socket = new WebSocket("ws://192.168.0.199:3001");
+      const socket = new WebSocket("wss://ws.art-telemetry.xyz");
       socket.onmessage = (event) => {
         try {
           const newData = JSON.parse(event.data);

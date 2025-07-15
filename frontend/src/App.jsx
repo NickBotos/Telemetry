@@ -3,7 +3,7 @@ import React from "react";
 import ErrorBoundary from "./ErrorBoundary";
 import Laptimelist from "./Laptimelist";
 import Bar from "./Bar";
-import Oilchart from "./Oilpressure-Oiltemp-Chart";
+import Oilchart from "./oilpress-rpm";
 import Tpsmapchart from "./Tps-map-chart";
 import BatteryLambdaChart from "./Battery-Lambda-chart";
 import "./amaji.css"
@@ -11,6 +11,7 @@ import WheelTemperature from "./Wheel-temp-diagram";
 import Warning from "./icons-notifications";
 import Other from "./other";
 import Delta from "./Delta";
+import PressureChart from "./fuelpress-oiltemp";
 import './index.css';
 
 
@@ -22,6 +23,9 @@ function App() {
         <div className="left-section">
       <ErrorBoundary>
       < Oilchart/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <PressureChart />
       </ErrorBoundary>
       <ErrorBoundary>
       <Tpsmapchart/>
